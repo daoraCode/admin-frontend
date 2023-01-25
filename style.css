@@ -73,3 +73,37 @@ body {
     font-family: sans-serif;
     font-size: medium;
 }
+.containerCard {
+    display: flex;
+    gap: 50px;
+    width: 85%;
+    height: auto;
+    margin-left: 280px;
+    padding: 10px 40px;
+}
+.infoGraph { 
+    width: 350px;
+    height: auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.price{
+    font-size: larger;
+}
+
+.chifre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+img {
+    width: 300px;
+    margin: center;
+}
+
+.text {
+    display: flex;
+    padding: 15px;
+}
