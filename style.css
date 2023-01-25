@@ -26,7 +26,7 @@ body {
 /* All-container grid */
 .all-container{
     display: grid;
-    grid-template-columns: 270px 1fr;
+    grid-template-columns: 270px 80%;
     grid-template-areas: "bloc1 bloc2";
 }
 
@@ -89,11 +89,10 @@ span {
 
 .containerCard {
     display: flex;
-    gap: 50px;
-    width: 85%;
+    gap: 15px;
     height: auto;
-    margin-left: 280px;
-    padding: 10px 40px;
+    padding: 10px 5px;
+    /* width: 85%; */
 }
 
 .infoGraph { 
@@ -119,8 +118,9 @@ span {
 }
 
 .text {
+    padding: 10px;
     display: flex;
-    padding: 15px;
+    justify-content: space-between;
 }
 
 /* ContentContainer grid */
@@ -129,7 +129,7 @@ span {
 }
 
 /* HEADER */
-header{
+header {
    display: flex;
    position: sticky;
    top: 5px;
@@ -137,6 +137,7 @@ header{
    background: white;
    border-radius: 10px;
    padding: 1.5em;
+   margin-bottom: 25px;
 }
 
 header .title{
