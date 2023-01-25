@@ -5,15 +5,33 @@
     box-sizing: border-box !important;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 a, button {
     text-decoration: none;
     border: transparent;
     cursor: pointer;
 }
 
+/* body */
+body {
+    font-family: sans-serif;
+    font-size: medium;
+    background: #F0F1F5;
+}
 
+/* All-container grid */
+.all-container{
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    grid-template-areas: "bloc1 bloc2";
+}
 
-h1, h2, h3, h4 {
+/* sidebar */
+.sidebar-container h1, h2, h3, h4 {
     color: #ffffff;
     margin: 25px auto;
     transition: all 4.s ease-out;
@@ -21,11 +39,11 @@ h1, h2, h3, h4 {
     cursor: pointer;
 }
 
-h1 {
+.sidebar-container h1 {
     color: aquamarine;
 }
 
-h4 {
+.sidebar-container h4 {
     font-weight: bolder;
     padding: 10px;
 }
@@ -49,16 +67,16 @@ span {
 }
 
 .sidebar-container {
-    width: 25%;
-    width: auto;
     margin: 5px;
     background-color: var(--grey-blue);
     padding: 20px;
     z-index: 20;
     height: 98.5vh;
     border-radius: 10px;
-    position: fixed;
+    position: sticky;
+    top: 5px;
     transition: all .3s ease-out;
+    grid-area: "bloc1";
 }
 
 .sidebar-container:hover {
@@ -69,10 +87,6 @@ span {
     padding-left: 2px;
 }
 
-body {
-    font-family: sans-serif;
-    font-size: medium;
-}
 .containerCard {
     display: flex;
     gap: 50px;
@@ -81,6 +95,7 @@ body {
     margin-left: 280px;
     padding: 10px 40px;
 }
+
 .infoGraph { 
     width: 350px;
     height: auto;
@@ -98,7 +113,7 @@ body {
     justify-content: space-between;
 
 }
-img {
+.infoGraph > img {
     width: 300px;
     margin: center;
 }
@@ -106,4 +121,47 @@ img {
 .text {
     display: flex;
     padding: 15px;
+}
+
+/* ContentContainer grid */
+.contentContainer{
+    grid-area: "bloc 2";
+}
+
+/* HEADER */
+header{
+   display: flex;
+   position: sticky;
+   top: 5px;
+   margin: 5px 5px 0 5px;
+   background: white;
+   border-radius: 10px;
+   padding: 1.5em;
+}
+
+header .title{
+    width: 80%;
+    padding-left: 3rem;
+
+}
+
+header .title p {
+    font-size: 1.6rem;
+}
+
+header .userSpace{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userSpace img {
+    height: 30px;
+}
+
+header .login{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
