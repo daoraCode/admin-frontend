@@ -1,0 +1,75 @@
+/* reset */
+*, ::after, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+a, button {
+    text-decoration: none;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+    margin: 25px auto;
+    transition: all 4.s ease-out;
+    padding: 8px;
+    cursor: pointer;
+}
+
+h1 {
+    color: aquamarine;
+}
+
+h4 {
+    font-weight: bolder;
+    padding: 10px;
+}
+
+span {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: lighter;
+    color: #ffffff35;
+    padding: 25px 4px;
+    cursor: pointer;
+}
+
+:is(h1, h2, h3, h4 ):hover {
+    background: #63a7ffad;
+    border-radius: 4px;
+}
+
+:root {
+    --grey-blue: #1C1F26;
+}
+
+.sidebar-container {
+    width: 25%;
+    width: auto;
+    margin: 5px;
+    background-color: var(--grey-blue);
+    padding: 20px;
+    z-index: 20;
+    height: 98.5vh;
+    border-radius: 10px;
+    position: fixed;
+    transition: all .3s ease-out;
+}
+
+.sidebar-container:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container-app {
+    padding-left: 2px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: medium;
+}
